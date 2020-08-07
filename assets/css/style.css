@@ -754,6 +754,9 @@ img {
 /* ******************************
 :: 7.0 HEADER AREA CSS
 ****************************** */
+.mini-logo{
+    height: 50px;
+}
 .navbar {
     position: absolute;
     top: 0;
@@ -955,7 +958,7 @@ img {
 :: 8.0 WELCOME AREA CSS
 ****************************** */
 .welcome-area {
-    height: 800px;
+    height: 900px;
     z-index: 1;
 }
 
