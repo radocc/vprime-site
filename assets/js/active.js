@@ -217,17 +217,19 @@
         dots: true,
         arrows: false,
         speed: 2000,
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: false,
         pauseOnFocus: false,
+        adaptiveHeight: true,
+        respondTo: 'slider',
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },

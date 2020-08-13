@@ -548,11 +548,11 @@ img {
 
 /*BACKGROUND IMAGES*/
 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/bg/welcome-bg.jpg") no-repeat scroll center center / cover;
+    /* background: rgba(0, 0, 0, 0) url("../img/bg/welcome-bg.jpg") no-repeat scroll center center / cover; */
 }
 
-.homepage-3 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/blog/blog-5.jpg") no-repeat scroll center center / cover;
+.homepage-2 .welcome-area {
+    background: rgba(0, 0, 0, 0) url("../img/bg/pexels-fauxels-3184338.jpg") no-repeat scroll center center / cover;
 }
 
 .homepage-4 .welcome-area {
@@ -580,7 +580,7 @@ img {
 }
 
 .download-area {
-    background: rgba(0, 0, 0, 0) url("../img/bg/download-bg.jpg") no-repeat fixed center center / cover;
+    background: rgba(0, 0, 0, 0) url("../img/bg/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg") no-repeat fixed center center / cover;
 }
 
 .subscribe-area {
@@ -963,6 +963,11 @@ img {
 }
 
 .welcome-thumb {
+    /* max-width: 300px; */
+    /* padding-top: 70px; */
+}
+
+.welcome-thumb-play {
     max-width: 300px;
     padding-top: 70px;
 }
@@ -1067,7 +1072,7 @@ img {
 **************************************/
 @media (min-width: 992px) {
     .homepage-2 .welcome-thumb {
-        max-width: 400px;
+        max-width: 100%;
     }
 }
 .homepage-3 .welcome-area .subscribe-form {
@@ -1089,6 +1094,11 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+.homepage-2 .welcome-area .shape-bottom svg {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .homepage-3 .welcome-area .shape-bottom svg {
@@ -2182,4 +2192,39 @@ img {
     .countdown-container .countdown-value {
         font-size: 40px;
     }
+}
+
+#screenshots {
+    padding-bottom: 0px;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+}
+
+.features-thumb {
+    transform: translateY(40px);
+}
+
+.frame-mobile {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    justify-content: center;
+    margin-top: 17px;
+    transform: translateY(2px);
+}
+
+.frame-mobile img {
+    width: 400px;
+}
+
+.mobile-sliders {
+    width: 264px;
+}
+
+.plan {
+    margin-top: 20px;
 }
