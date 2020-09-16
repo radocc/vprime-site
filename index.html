@@ -21,10 +21,30 @@
 
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+        function abrirModal(){
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            modal.style.display = "block";
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
 
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="homepage-2">
+<body class="homepage-2" onload="abrirModal()">
     <!--====== Preloader Area Start ======-->
     <div class="preloader-main">
         <div class="preloader-wapper">
@@ -73,83 +93,21 @@
                     <nav>
                         <ul class="navbar-nav" id="navbar-nav">
                             <li class="nav-item ">
-                                <a class="nav-link " href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link " href="#home">
                                     Início
-                                </a>
-                                 <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                    <li>
-                                        <a class="dropdown-item" href="index.html">Planos</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#features">Benefícios</a>
-                                    </li> 
-                                    <li>
-                                        <a class="dropdown-item" href="index-3.html">Perguntas Frequentes</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#contact">Contato</a>
-                                    </li> 
-                                    <li>
-                                        <a class="dropdown-item" href="index-5.html">Homepage-5</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="index-6.html">Homepage-6</a>
-                                    </li> 
-                                </ul> -->
+                                </a> 
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link scroll" href="#features">Recursos</a>
-                            </li>
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Blog Pages</a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="blog-two-column.html">Blog- 2 Column</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="blog-three-column.html">Blog- 3 Column</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="blog-left-sidebar.html">Blog- Left Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="blog-right-sidebar.html">Blog- Right Sidebar</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Blog Details</a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="blog-details-left-sidebar.html">Blog Details- Left Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="blog-details-right-sidebar.html">Blog Details- Right Sidebar</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="reviews.html">Reviews</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item disabled" href="#">More Coming Soon</a>
-                                    </li>
-                                </ul>
-                            </li> -->
+                            </li>                             
                             <li class="nav-item">
                                 <a class="nav-link scroll" href="#pricing">Planos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link scroll" href="#contact">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://vprime-painel.radocc.com">Acessar</a>
                             </li>
                         </ul>
                     </nav>
@@ -479,7 +437,7 @@
                             <div class="work-icon">
                                 <img class="avatar-md" src="assets/img/icon/work/download.png" alt="">
                             </div>
-                            <h3 class="text-white py-3">Instale the VPrime</h3>
+                            <h3 class="text-white py-3">Instale o VPrime</h3>
                             <p class="text-white">Baixe o aplicativo através da playstore e appstore, faça o login, e boas vendas.</p>
                         </div>
                     </div>
@@ -850,7 +808,8 @@
                                             <div id="collapseOne" class="collapse show" data-parent="#sApp-accordion">
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
-                                                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.
+                                                    Para a instalação do VPrime é necessário abrir sua loja de Aplicativos (PlayStore ou AppStore), pesquisar pelo nome vprime e realizar a instalação.
+                                                    Após instalado solicite ao seu administrador da empresa um usuário do aplicativo. Caso seja o administrador entre em contato com nossa equipe.
                                                 </div>
                                             </div>
                                         </div>
@@ -867,7 +826,7 @@
                                             <div id="collapseTwo" class="collapse" data-parent="#sApp-accordion">
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
-                                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                                                    Para a solicitação de suporte disponibilizamos um os telefones de contato na área contato do Site.
                                                 </div>
                                             </div>
                                         </div>
@@ -884,7 +843,8 @@
                                             <div id="collapseThree" class="collapse" data-parent="#sApp-accordion">
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
-                                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    Defina quais são as regras comerciais que deseja implantar no sistema e entre em contato com o suporte, para lhe auxiliar 
+                                                    na configuração do sistema.
                                                 </div>
                                             </div>
                                         </div>
@@ -901,24 +861,8 @@
                                             <div id="collapseFour" class="collapse" data-parent="#sApp-accordion">
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
-                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Single Accordion Item -->
-                                        <div class="card border-top-0 border-left-0 border-right-0 border-bottom">
-                                            <!-- Card Header -->
-                                            <div class="card-header bg-inherit border-0 p-0">
-                                                <h2 class="mb-0">
-                                                    <button class="btn collapsed px-0 py-3" type="button" data-toggle="collapse" data-target="#collapseFive">
-                                                        Como Configurar a conta de Bonificação?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseFive" class="collapse" data-parent="#sApp-accordion">
-                                                <!-- Card Body -->
-                                                <div class="card-body px-0 py-3">
-                                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                                                    A configuração é realizada na tela de Parâmetros, e para isso será necessário definir a modalidade do flex,
+                                                    o Saldo que vai conceder ao vendedor, qual o prazo de validade do saldo entre outras definições que estão na seção Flex em Parâmetros
                                                 </div>
                                             </div>
                                         </div>
@@ -1173,7 +1117,21 @@
         </footer>
         <!--====== Footer Area End ======--> 
     </div>
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>          
+          <h4 class="title-modal">Olá, seja bem vindo ao VPrime</h4>
+          <p class="p-modal">Agora você possui o site do VPrime para se manter informado sobre as novidades no sistema</p>
+          
+          <p class="p-modal">Para a sua segurança foi disponibilizado o certificado de criptografia. 
+              Recomendamos que utilize o link <a class="a-modal" href="https://vprime-painel.radocc.com">https://vprime-painel.radocc.com</a> para acessar o sistema</p>
+          <p class="p-modal">Lembre-se de salvar em favoritos do seu navegador!</p>
+
+        </div>
+      
+      </div>
 
     <!-- ***** All jQuery Plugins ***** -->
 
@@ -1189,6 +1147,7 @@
 
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
+
 </body>
 
 </html>
