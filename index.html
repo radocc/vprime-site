@@ -9,42 +9,22 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>VPrime | Radocc</title>
+    <title>Radocc</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/img/favicon.webp">
+    <link rel="icon" href="assets/img/favicon.png">
 
     <!-- ***** All CSS Files ***** -->
 
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/radocc.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script>
-        function abrirModal(){
-            var modal = document.getElementById("myModal");
-            var btn = document.getElementById("myBtn");
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            modal.style.display = "block";
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="homepage-2" onload="abrirModal()">
+<body class="homepage">
     <!--====== Preloader Area Start ======-->
     <div class="preloader-main">
         <div class="preloader-wapper">
@@ -56,8 +36,8 @@
                     </filter>
                 </defs>
                 <g filter="url(#goo)">
-                    <circle class="dot" cx="50" cy="50" r="25" fill="#F26419" />
-                    <circle class="dot" cx="50" cy="50" r="25" fill="#F26419" />
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
                 </g>
             </svg>
             <div>
@@ -77,9 +57,9 @@
         <!-- ***** Header Start ***** -->
         <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
             <div class="container position-relative">
-                <a class="navbar-brand" href="index.html">
-                    <img class="navbar-brand-regular mini-logo" src="assets/img/logo/logo-vprime-white.webp" alt="brand-logo">
-                    <img class="navbar-brand-sticky mini-logo" src="assets/img/logo/logo-vprime.webp" alt="sticky brand-logo">
+                <a class="navbar-brand" href="#home">
+                    <img class="navbar-brand-regular" src="assets/img/logo/logos.png" alt="brand-logo">
+                    <img class="navbar-brand-sticky" src="assets/img/logo/logo2.png" alt="sticky brand-logo">
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -92,22 +72,20 @@
                     </button>
                     <nav>
                         <ul class="navbar-nav" id="navbar-nav">
-                            <li class="nav-item ">
-                                <a class="nav-link " href="#home">
-                                    Início
-                                </a> 
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#inicio">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link scroll" href="#features">Recursos</a>
-                            </li>                             
-                            <li class="nav-item">
-                                <a class="nav-link scroll" href="#pricing">Planos</a>
+                                <a class="nav-link scroll" href="#servicos">Soluções</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link scroll" href="#contact">Contato</a>
+                                <a class="nav-link scroll" href="#produtos">Produtos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="https://vprime-painel.radocc.com">Acessar</a>
+                                <a class="nav-link scroll" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contato">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -117,228 +95,164 @@
         <!-- ***** Header End ***** -->
 
         <!-- ***** Welcome Area Start ***** -->
-        <section id="home" class="section welcome-area bg-overlay d-flex align-items-center overflow-hidden">
-            <!-- <div class="shapes-container"> -->
-                <!-- <div class="bg-shape"></div> -->
-            <!-- </div> -->
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
+        <section id="inicio" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
                     <!-- Welcome Intro Start -->
-                    <div class="col-12 col-md-5">
-                        <div class="welcome-intro">
-                            <h1 class="text-white">VPrime<br>solução em vendas</h1>
-                            <p class="text-white my-4">
-                                O VPrime é a solução de força de vendas que potencializa e gerencia sua área comercial. Vendas organizadas, ágeis e sem retrabalho.    
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <div class="welcome-intro text-center">
+                            <h1 class="text-white" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Desenvolvimento de sistemas e aplicativos mobile para empresas</h1>
+                            <p class="text-white my-6 sub-title" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                                Transformamos ideias em realidade
                             </p>
-                            <div class="col-12 col-md-5 col-lg-6">
-                                <!-- Welcome Thumb -->
-                                <div class="welcome-thumb-play text-center mx-auto">
-                                    <!-- Play Button -->
-                                    <a class="play-btn" data-fancybox href="https://www.youtube.com/watch?v=Ec-2aXd0Rj0calc">
-                                        <div class="btn-circle play-animation"></div>
-                                        <div class="btn-circle play-animation animation-short"></div>
-                                        <!-- Play Icon -->
-                                        <div class="play-icon">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="welcome-bottom" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                                
+                                <span class="d-inline-block text-white fw-3 font-italic mt-3 fs-20">
+                                    Com sede em Pato Branco-PR, e com profissionais com mais de 10 anos de atuação no mercado, a RADOCC tornou-se rapidamente referência em tecnologia e inovação.    
+                                </span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <!-- Welcome Thumb -->
-                        <div class="welcome-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                            <img src="assets/img/screenshots/1463.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Shape Bottom -->
             <div class="shape-bottom">
-                <svg fill="#fff" id="Layer_1" x="0px" y="0px" viewBox="0 0 1921 819.8" style="enable-background:new 0 0 1921 819.8;" xml:space="preserve">
-                    <path class="st0" d="M1921,413.1v406.7H0V0.5h0.4l228.1,598.3c30,74.4,80.8,130.6,152.5,168.6c107.6,57,212.1,40.7,245.7,34.4  c22.4-4.2,54.9-13.1,97.5-26.6L1921,400.5V413.1z"></path>
-                    <path class="st1" d="M1921,387.9v431.9H0V0h13l226.6,594.4c14.4,35.7,34,67.4,58.3,94.3c24.4,26.9,54.2,49.8,88.6,68.1  c50.2,26.6,105.8,40.1,165.2,40.1c36.1,0,63.6-5.2,72.6-6.9c21.6-4,53.9-12.9,96.1-26.2L1921,387.9z"></path>
+                <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="fill" d="M0,6V0h1000v100L0,6z"></path>
                 </svg>
             </div>
         </section>
         <!-- ***** Welcome Area End ***** -->
-
-        <section id="features" class="section features-area overflow-hidden ptb_100">
+        <section id="servicos" class="section features-area style-two overflow-hidden ptb_100">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-12 col-md-10 col-lg-6">
                         <!-- Section Heading -->
-                        <div class="section-heading text-center">
-                            <h2>Porque adquirir o VPrime</h2>
-                            <p class="d-none d-sm-block mt-4">
-                                Gerentes e coordenadores comerciais terão uma visão clara e em tempo real de tudo que acontece com seus clientes e sua equipe de vendas.
-                            </p>
-                            <p class="d-block d-sm-none mt-4">Sistema completo em gestão</p>
+                        <div class="section-heading">
+                            <h2>Sob demanda e Sob Medida</h2>
+                            <p class="d-none d-sm-block mt-4">Conheça um pouco sobre o nosso trabalho e o que podemos oferecer para sua empresa.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Features Item -->
-                        <ul class="features-item">
-                            <li>
-                                <!-- Image Box -->
-                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.3s">
-                                    <!-- Featured Image -->
-                                    <div class="featured-img mr-3">
-                                        <img class="avatar-sm" src="assets/img/icon/featured-img/location.png" alt="">
-                                    </div>
-                                    <!-- Icon Text -->
-                                    <div class="icon-text media-body align-self-center align-self-md-start">
-                                        <h3 class="mb-2">Mapeamento de Vendas</h3>
-                                        <p>
-                                            Faz o mapeamento de cada operação de venda realizada e disponibiliza ao vendedor e supervisores uma visão em mapa seguindo a hierarquia de supervisores
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- Image Box -->
-                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.6s">
-                                    <!-- Featured Image -->
-                                    <div class="featured-img mr-3">
-                                        <img class="avatar-sm" src="assets/img/icon/featured-img/calendar.png" alt="">
-                                    </div>
-                                    <!-- Icon Text -->
-                                    <div class="icon-text media-body align-self-center align-self-md-start">
-                                        <h3 class="mb-2">Agenda de Visitas</h3>
-                                        <p>
-                                            Permite mapear e definir rotas de visitas por dia para cada vendedor, de forma a reduzir custos e maximizar a produtividade da equipe.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- Image Box -->
-                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.9s">
-                                    <!-- Featured Image -->
-                                    <div class="featured-img mr-3">
-                                        <img class="avatar-sm" src="assets/img/icon/featured-img/lock.png" alt="">
-                                    </div>
-                                    <!-- Icon Text -->
-                                    <div class="icon-text media-body align-self-center align-self-md-start">
-                                        <h3 class="mb-2">Segurança </h3>
-                                        <p>Disponível em cloud, o sistema fica disponível 24 horas por dia, 7 dias por semana.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-4 d-none d-lg-block">
-                        <!-- Featutes Thumb -->
-                        <div class="features-thumb text-center">
-                            <img src="assets/img/screenshots/positivacao.png" alt="">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets/img/icon/featured-img/layers.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Desenvolvimento mobile</h3>
+                                <p>Desenvolvimento de aplicativos mobile com as tecnologias mais inovadoras, desenvolvimento Android e iOS.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Features Item -->
-                        <ul class="features-item">
-                            <li>
-                                <!-- Image Box -->
-                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.3s">
-                                    <!-- Featured Image -->
-                                    <div class="featured-img mr-3">
-                                        <img class="avatar-sm" src="assets/img/icon/featured-img/support.png" alt="">
-                                    </div>
-                                    <!-- Icon Text -->
-                                    <div class="icon-text media-body align-self-center align-self-md-start">
-                                        <h3 class="mb-2">Customizado</h3>
-                                        <p>Configure o sistema de acordo com as politicas comerciais de sua empresa.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- Image Box -->
-                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.6s">
-                                    <!-- Featured Image -->
-                                    <div class="featured-img mr-3">
-                                        <img class="avatar-sm" src="assets/img/icon/featured-img/rocket.png" alt="">
-                                    </div>
-                                    <!-- Icon Text -->
-                                    <div class="icon-text media-body align-self-center align-self-md-start">
-                                        <h3 class="mb-2">Campanhas de Vendas</h3>
-                                        <p>
-                                            Defina em cada campanha de venda as regras e benefícios para que o vendedor não perca nenhuma oportunidade.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- Image Box -->
-                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.9s">
-                                    <!-- Featured Image -->
-                                    <div class="featured-img mr-3">
-                                        <img class="avatar-sm" src="assets/img/icon/featured-img/target.png" alt="">
-                                    </div>
-                                    <!-- Icon Text -->
-                                    <div class="icon-text media-body align-self-center align-self-md-start">
-                                        <h3 class="mb-2">Metas</h3>
-                                        <p>
-                                            Estabeleça as metas e deixe o sistema realizar o controle e apontamento dos integrantes da equipe seguindo a hierarquia de supervisores. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInUp" data-aos-duration="2s" data-wow-delay="0.2s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets/img/icon/featured-img/speak.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Back-End & APIs</h3>
+                                <p>
+                                    Tudo que o seu aplicativo precisar pra funcionar integrado e na nuvem. Infraestrutura completa de banco de dados, servidores e APIs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets/img/icon/featured-img/lock.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Design Funcional</h3>
+                                <p>
+                                    Equipe especializada no desenvolvimento de layouts para sistemas web, websites e apps Android e iOS, com foco na usabilidade e design inovador.    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.8s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets/img/icon/featured-img/support.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Prototipação de soluções</h3>
+                                <p>
+                                    Análise e desenvolvimento de prótotipo para validação de produto    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 res-margin">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInUp" data-aos-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets/img/icon/featured-img/seo-and-web.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Sistemas multiplataforma</h3>
+                                <p>
+                                    Desenvolvemos as soluções para as plataformas Android e IOS com tecnológias novas do mercado .    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                        <!-- Image Box -->
+                        <div class="image-box text-center icon-1 p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.8s">
+                            <!-- Featured Image -->
+                            <div class="featured-img mb-3">
+                                <img class="avatar-sm" src="assets/img/icon/featured-img/code.png" alt="">
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Consultoria</h3>
+                                <p>
+                                    Antes de iniciar o projeto, realizamos uma consultoria para entender a necessidade e propor a melhor solução    
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ***** Features Area End ***** -->
-
+        </section> 
         <!-- ***** Discover Area Start ***** -->
         <section class="section discover-area bg-gray overflow-hidden ptb_100">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
+                <div class="row align-items-center justify-content-between">
                     <div class="col-12 col-lg-6 order-2 order-lg-1">
                         <!-- Discover Thumb -->
                         <div class="service-thumb discover-thumb mx-auto">
-                            <img src="assets/img/discover/001_EQUIPE.png" alt="">
+                            <img src="assets/img/radocc/produtos.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 order-1 order-lg-2">
                         <!-- Discover Text -->
                         <div class="discover-text pt-4 pt-lg-0 px-0 px-lg-4">
-                            <h2 class="pb-4">Mais produtividade em sua equipe</h2>
-                            <!-- Service List -->
-                            <ul class="service-list style-two">
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>Histórico do cliente e mix de produtos disponibilizados na negociação.</p>
-                                    </div>
-                                </li>
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>Controle de positivação de clientes.</p>
-                                    </div>
-                                </li>
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>Preços indexados com condições de pagamentos e segmentos do cliente.</p>
-                                    </div>
-                                </li>
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>Simulação financeira no fechamento do pedido.</p>
-                                    </div>
-                                </li>
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>
-                                            Roteirização e Agenda de visitas para cada dia no ciclo de visitas
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <h2 class="pb-4">Soluções personalizadas</h2>
+                            <!-- Check List -->
+                            <p class="pb-2">
+                                O desenvolvimento de softwares de qualidade vai muito além do domínio das tecnologias, ele está diretamente ligado a criatividade, visão de negócios e trabalho em equipe.                                 
+                            </p> 
+                            <p>
+                                A RADOCC tem um time experiente e focado na melhor solução para o seu negócio. 
+                            </p> 
                         </div>
                     </div>
                 </div>
@@ -346,74 +260,7 @@
         </section>
         <!-- ***** Discover Area End ***** -->
 
-         <!-- ***** Service Area Start ***** -->
-         <section class="section service-area bg-inherit overflow-hidden ptb_100">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-12 col-lg-6 order-2 order-lg-1">
-                        <!-- Service Text -->
-                        <div class="service-text pt-4 pt-lg-0 px-0 px-lg-4">
-                            <h2 class="text-capitalize mb-4">Solução segura e completa</h2>
-                            <!-- Service List -->
-                            <ul class="service-list style-two">
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>Coleta informações, gera relatórios e gráficos. Tudo de forma simples e fácil.
-                                    </div>
-                                </li>
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>
-                                            Agilidade na criação e modificação das campanhas de vendas.
-                                        </p>
-                                    </div>
-                                </li>
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>
-                                            Aumente a venda dos produtos através da campanha.    
-                                        </p>
-                                    </div>
-                                </li>
-                                <!-- Single Service -->
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>
-                                            Fácil de usar com sistema hospedado na Nuvem;
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>
-                                            Sincronizado automaticamenteo ao seu ERP, permite a realização de vendas off-line
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="single-service py-2">
-                                    <div class="service-text">
-                                        <p>
-                                            Garantia de disponibilidade dos serviços.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <a href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank" class="btn btn-bordered mt-4">Saiba mais</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 order-1 order-lg-2 d-none d-md-block">
-                        <!-- Service Thumb -->
-                        <div class="service-thumb mx-auto">
-                            <img src="assets/img/screenshots/solucao.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Service Area End ***** -->
+        
 
         <!-- ***** Work Area Start ***** -->
         <section class="section work-area bg-overlay overflow-hidden ptb_100">
@@ -422,9 +269,9 @@
                     <div class="col-12 col-lg-6">
                         <!-- Work Content -->
                         <div class="work-content text-center">
-                            <h2 class="text-white">Como o VPrime funciona?</h2>
+                            <h2 class="text-white">Nossos diferenciais</h2>
                             <p class="text-white my-3 mt-sm-4 mb-sm-5">
-                                Sincronizado ao seu ERP, seus representantes terão informações atualizadas dos seus produtos, clientes e política comercial, para fazer vendas com maior qualidade e agilidade. 
+                                
                             </p>
                         </div>
                     </div>
@@ -435,10 +282,12 @@
                         <div class="single-work text-center p-3">
                             <!-- Work Icon -->
                             <div class="work-icon">
-                                <img class="avatar-md" src="assets/img/icon/work/download.png" alt="">
+                                <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
                             </div>
-                            <h3 class="text-white py-3">Instale o VPrime</h3>
-                            <p class="text-white">Baixe o aplicativo através da playstore e appstore, faça o login, e boas vendas.</p>
+                            <h3 class="text-white py-3">Agilidade no Desenvolvimento</h3>
+                            <p class="text-white">
+                                Sabemos o quanto é importante acertar o timing de um projeto de software, por isso trabalhamos com metodologias ágeis e times multidisciplinares.    
+                            </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -448,8 +297,10 @@
                             <div class="work-icon">
                                 <img class="avatar-md" src="assets/img/icon/work/settings.png" alt="">
                             </div>
-                            <h3 class="text-white py-3">Defina sua politica de vendas</h3>
-                            <p class="text-white">No portal Web configure as politicas de trabalho de sua empresa, defina os usuários do sistema, agenda de visitas e campanhas de venda.</p>
+                            <h3 class="text-white py-3">Experiência e Conhecimento</h3>
+                            <p class="text-white">
+                                Ao longo de nossa história trabalhamos com diversos segmentos e temos a experiência necessária para atender os mais variados projetos. 
+                            </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -459,68 +310,18 @@
                             <div class="work-icon">
                                 <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
                             </div>
-                            <h3 class="text-white py-3">Venda on-line e off-line</h3>
-                            <p class="text-white">Abertura de clientes e realização de pedidos onde estiver, sem dependência de internet, seguindo as politicas comerciais.</p>
+                            <h3 class="text-white py-3">
+                                Flexibilidade de Verdade
+                            </h3>
+                            <p class="text-white">
+                                Capacidade de prover recursos para a produção do seu software, em qualquer etapa do ciclo de vida de desenvolvimento e em diversos modelos de contratação.  
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ***** Work Area End ***** -->
-
-        <!-- ***** Screenshots Area Start ***** -->
-        <section id="screenshots" class="section screenshots-area ptb_100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7">
-                        <!-- Section Heading -->
-                        <div class="section-heading text-center">
-                            <h2 class="">Design intuitivo</h2>
-                            <p class="d-none d-sm-block mt-4">O Design do sistema e suas funcionalidades foram desenvolvido pensando em cada momento do seu dia a dia.</p>
-                            <p class="d-block d-sm-none mt-4">O Design do sistema e suas funcionalidades foram desenvolvido pensando em cada momento do seu dia a dia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 screenshots">
-                        <!-- App Screenshot Slider Area -->
-                        <div class="frame-mobile">
-                            <img src="assets/img/screenshots/modelo_celular.png" alt="">
-                        </div>
-                        <div class="mobile-sliders">
-                            <div class="app-screenshots">
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/inicio.jpg" alt="">
-                                </div>
-                                <!-- Single Screenshot Item -->
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/home.jpg" alt="">
-                                </div>
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/agenda.jpg" alt="">
-                                </div>
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/metas.jpg" alt="">
-                                </div>
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/mapavendas.jpg" alt="">
-                                </div>
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/itens_expandidos.jpg" alt="">
-                                </div>
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/impressao.jpg" alt="">
-                                </div>
-                                <div class="single-screenshot">
-                                    <img src="assets/img/screenshots/vprime_screens/campanhas_aplicar.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Screenshots Area End ***** -->
 
         <!-- ***** Review Area Start ***** -->
         <section id="review" class="review-area ptb_100">
@@ -529,11 +330,9 @@
                     <div class="col-12 col-md-10 col-lg-8">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
-                            <h2 class="">O que dizem de nós</h2>
+                            <h2 class="text-capitalize">O que falam de nós</h2>
                             <p class="d-none d-sm-block mt-4">
-                            </p>
-                            <p class="d-block d-sm-none mt-4">
-                                
+                                Valorizamos cada opinião, independente da polaridade.
                             </p>
                         </div>
                     </div>
@@ -551,10 +350,12 @@
                                     <i class="fas fa-star text-warning"></i>
                                     <i class="fas fa-star text-warning"></i>
                                 </div>
-                                <h4 class="text-primary mt-4 mb-3">Excelente serviço e suporte!!</h4>
+                                <h4 class="text-primary mt-4 mb-3">Excelente serviço e suporte</h4>
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>Com o VPrime e sua equipe de suporte, ampliamos a nossa área de vendas de forma clara e segura.</p>
+                                    <p>
+                                        A comunicação com nossos clientes ficou mais ágil
+                                    </p>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -565,12 +366,12 @@
                             <div class="reviewer media bg-gray p-4">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/otavio.jpg" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Otávio Henrique Rosada</h5>
-                                    <h6 class="text-secondary fw-6">Indústria Vó Neuza</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">VenturaTur</h5>
+                                    <h6 class="text-secondary fw-6">Adriano Amadori</h6>
                                 </div>
                             </div>
                         </div>
@@ -587,10 +388,12 @@
                                     <i class="fas fa-star text-warning"></i>
                                     <i class="fas fa-star-half-alt text-warning"></i>
                                 </div>
-                                <h4 class="text-primary mt-4 mb-3">Atendimento ágil</h4>
+                                <h4 class="text-primary mt-4 mb-3">Superor as expectativas</h4>
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>A equipe de suporte realmente entende do meu dia a dia, e conseguem além de ajudar, nós guia ao sucesso.</p>
+                                    <p>
+                                        A empresa entendeu as nossas necessidades e conseguiu entregar um sistema que superou nossas expectativas.
+                                    </p>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -601,12 +404,12 @@
                             <div class="reviewer media bg-gray p-4">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/dionata.jpeg" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-2.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Dionata Farias</h5>
-                                    <h6 class="text-secondary fw-6">Rede Delta de Combustíveis</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Versa TV Corporativa</h5>
+                                    <h6 class="text-secondary fw-6">Angelo Garcia</h6>
                                 </div>
                             </div>
                         </div>
@@ -623,11 +426,11 @@
                                     <i class="fas fa-star text-warning"></i>
                                     <i class="fas fa-star text-warning"></i>
                                 </div>
-                                <h4 class="text-primary mt-4 mb-3">Reduziu meu trabalho</h4>
+                                <h4 class="text-primary mt-4 mb-3">A consultoria foi fundamental</h4>
                                 <!-- Review Text -->
                                 <div class="review-text">
                                     <p>
-                                        Com informações seguras, em tempo real, consigo planejar o futuro do negócio, enquanto o Vprime gerencia a operação.
+                                        Com a consultoria e experiência da empresa, conseguimos aproximar os profissionais da área de agronomia do estado do Paraná.
                                     </p>
                                 </div>
                                 <!-- Quotation Icon -->
@@ -639,12 +442,12 @@
                             <div class="reviewer media bg-gray p-4">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/clodomir.jpg" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Denilson</h5>
-                                    <h6 class="text-secondary fw-6">Indústria TNT Nitros Quimica</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Clodomir Ascari</h5>
+                                    <h6 class="text-secondary fw-6">Presidente, FEAPR</h6>
                                 </div>
                             </div>
                         </div>
@@ -652,282 +455,39 @@
                 </div>
             </div>
         </section>
-        <!-- ***** Review Area End ***** -->
-
-        <!-- ***** Price Plan Area Start ***** -->
-        <section id="pricing" class="section price-plan-area bg-gray overflow-hidden ptb_100">
+        <!-- ***** Review Area End ***** --> 
+        <!-- ***** Team Area Start ***** -->
+        <section id="sobre" class="section team-area team-style-two overflow-hidden ptb_100">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7">
+                    <div class="col-12 col-md-10 col-lg-6">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
-                            <h2>Escolha o plano para sua necessidade</h2>
-                            <p class="d-none d-sm-block mt-4">
-                                Disponibilizamos planos da solução VPrime conforme a necessidade de cada cliente.    
-                            </p>
-                            <p class="d-block d-sm-none mt-4">
-                                Disponibilizamos planos da solução VPrime conforme a necessidade de cada cliente.
-                            </p>
+                            <h2 class="text-capitalize">Sobre</h2>                            
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-10 col-lg-12">
-                        <div class="row price-plan-wrapper">
-                            <div class="col-12 col-md-4 plan">
-                                <!-- Single Price Plan -->
-                                <div class="single-price-plan text-center p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
-                                    <!-- Plan Thumb -->
-                                    <div class="plan-thumb">
-                                        <img class="avatar-lg" src="assets/img/pricing/mala-de-viagem.png" alt="">
-                                    </div>
-                                    <!-- Plan Title -->
-                                    <div class="plan-title my-2 my-sm-3">
-                                        <h3 class="text-uppercase">Starter</h3>
-                                    </div>
-                                    <!-- Plan Price
-                                    <div class="plan-price pb-2 pb-sm-3">
-                                        <h1 class="color-primary"><small class="fw-7">R$</small>35,99</h1>
-                                    </div> -->
-                                    <!-- Plan Description -->
-                                    <div class="plan-description">
-                                        <ul class="plan-features">
-                                            <li class="border-top py-3">Online e Offline</li>
-                                            <li class="border-top py-3">Servidor em Nuvem</li>
-                                            <li class="border-top py-3">24/7 Suporte técnico</li>
-                                            <li class="border-top py-3">Portal Web para gerenciamento e parametrizações</li>
-                                            <li class="border-top border-bottom py-3">Realização de backup diário</li>
-                                        </ul>
-                                    </div>
-                                    <!-- Plan Button -->
-                                    <div class="plan-button">
-                                        <a href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank" class="btn mt-4">Entrar em Contato</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4 plan">
-                                <!-- Single Price Plan -->
-                                <div class="single-price-plan text-center p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
-                                    <!-- Plan Thumb -->
-                                    <div class="plan-thumb">
-                                        <img class="avatar-lg" src="assets/img/pricing/diamante.png" alt="">
-                                    </div>
-                                    <!-- Plan Title -->
-                                    <div class="plan-title my-2 my-sm-3">
-                                        <h3 class="text-uppercase">Business</h3>
-                                    </div>
-                                    <!-- Plan Price -->
-                                    <!-- <div class="plan-price pb-2 pb-sm-3">
-                                        <h1 class="color-primary"><small class="fw-7">R$</small>49,99</h1>
-                                    </div> -->
-                                    <!-- Plan Description -->
-                                    <div class="plan-description">
-                                        <ul class="plan-features">
-                                            <li class="border-top py-3">Recursos do Starter</li>
-                                            <li class="border-top py-3">Cadastros de Clientes</li>
-                                            <li class="border-top py-3">Operações de pedidos, orçamentos, bonificação e troca</li>
-                                            <li class="border-top py-3">Positivação de Clientes</li>
-                                            <li class="border-top border-bottom py-3">Controle de Estoque</li>
-                                        </ul>
-                                    </div>
-                                    <!-- Plan Button -->
-                                    <div class="plan-button">
-                                        <a href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank" class="btn mt-4">Entrar em contato</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4 plan">
-                                <!-- Single Price Plan -->
-                                <div class="single-price-plan text-center p-5 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
-                                    <!-- Plan Thumb -->
-                                    <div class="plan-thumb">
-                                        <img class="avatar-lg" src="assets/img/pricing/coroa.png" alt="">
-                                    </div>
-                                    <!-- Plan Title -->
-                                    <div class="plan-title my-2 my-sm-3">
-                                        <h3 class="text-uppercase">Enterprise</h3>
-                                    </div>
-                                    <!-- Plan Price -->
-                                    <!-- <div class="plan-price pb-2 pb-sm-3">
-                                        <h1 class="color-primary"><small class="fw-7">R$</small>79,99</h1>
-                                    </div> -->
-                                    <!-- Plan Description -->
-                                    <div class="plan-description">
-                                        <ul class="plan-features">
-                                            <li class="border-top py-3">Recursos do Business</li>
-                                            <li class="border-top py-3">Gestão de Conta Flex, Bonificação e Troca </li>
-                                            <li class="border-top py-3">Customização de Operações</li>
-                                            <li class="border-top py-3">Dashboard, Mapas de Vendas e Gráficos</li>
-                                            <li class="border-top border-bottom py-3">Comissões e Metas</li>
-                                        </ul>
-                                    </div>
-                                    <!-- Plan Button -->
-                                    <div class="plan-button">
-                                        <a href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank" class="btn mt-4">Entrar em contato</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row justify-content">
+                    <p class=" ">
+                        Somos uma empresa jovem, inovadora e criativa, nascida na era da cultura digital. Mas sua equipe tem a expertise de quem já está a mais de 10 anos no mercado. Seus fundadores são 2 professores universitários, que além de dominar a linguagem dos códigos de programação, entendem de relacionamentos e montaram um time que joga para sua empresa atingir os resultados esperados, afinal todo software é feito por pessoas, para facilitar a vida de outras pessoas.
+                    </p>
+                    <p class="">
+                        Com toda essa experiência e sangue novo, nossa empresa já realizou vários projetos em pouco tempo na área médica, empresarial, agroindustrial e gestão pública, destacando o <a href="https://vprime.radocc.com" target="blank">Vprime</a>, app para android e iOS, um poderoso sistema de força de vendas que a cada dia agrega mais usuários.
+                    </p>
+                    <p class="">
+                        Em Pato Branco, nossa terra natal, somos parceiros da UTFPR, da secretaria municipal de ciência, tecnologia e inovação e da federação dos Engenheiros Agrônomos do Paraná.
+                    </p>
+                    <p class="">
+                        Estamos em constante evolução, e hoje nossa empresa presta serviços de consultoria técnica e de mercado, além do desenvolvimento de softwares sob demanda. Isso nos permite ajudar na construção da ideia e orientar nossos clientes para o sucesso de seus projetos.
+                    
+                    </p>                            
                 </div>
             </div>
         </section>
-        <!-- ***** Price Plan Area End ***** -->
-
-        <!-- ***** FAQ Area Start ***** -->
-        <section class="section faq-area ptb_100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7">
-                        <!-- Section Heading -->
-                        <div class="section-heading text-center">
-                            <h2 class="">Perguntas frequentes</h2>
-                            <p class="d-none d-sm-block mt-4">Caso tenha dúvidas, veja abaixo as perguntas mais frequentes.</p>
-                            <p class="d-block d-sm-none mt-4">Caso tenha dúvidas, veja abaixo as perguntas mais frequentes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <!-- FAQ Content -->
-                        <div class="faq-content">
-                            <!-- sApp Accordion -->
-                            <div class="accordion" id="sApp-accordion">
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-10 col-lg-8">
-                                        <!-- Single Accordion Item -->
-                                        <div class="card border-top-0 border-left-0 border-right-0 border-bottom">
-                                            <!-- Card Header -->
-                                            <div class="card-header bg-inherit border-0 p-0">
-                                                <h2 class="mb-0">
-                                                    <button class="btn px-0 py-3" type="button" data-toggle="collapse" data-target="#collapseOne">
-                                                        Como instalar o Vprime?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseOne" class="collapse show" data-parent="#sApp-accordion">
-                                                <!-- Card Body -->
-                                                <div class="card-body px-0 py-3">
-                                                    Para a instalação do VPrime é necessário abrir sua loja de Aplicativos (PlayStore ou AppStore), pesquisar pelo nome vprime e realizar a instalação.
-                                                    Após instalado solicite ao seu administrador da empresa um usuário do aplicativo. Caso seja o administrador entre em contato com nossa equipe.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Single Accordion Item -->
-                                        <div class="card border-top-0 border-left-0 border-right-0 border-bottom">
-                                            <!-- Card Header -->
-                                            <div class="card-header bg-inherit border-0 p-0">
-                                                <h2 class="mb-0">
-                                                    <button class="btn collapsed px-0 py-3" type="button" data-toggle="collapse" data-target="#collapseTwo">
-                                                        Como solicitar o suporte?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" data-parent="#sApp-accordion">
-                                                <!-- Card Body -->
-                                                <div class="card-body px-0 py-3">
-                                                    Para a solicitação de suporte disponibilizamos um os telefones de contato na área contato do Site.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Single Accordion Item -->
-                                        <div class="card border-top-0 border-left-0 border-right-0 border-bottom">
-                                            <!-- Card Header -->
-                                            <div class="card-header bg-inherit border-0 p-0">
-                                                <h2 class="mb-0">
-                                                    <button class="btn collapsed px-0 py-3" type="button" data-toggle="collapse" data-target="#collapseThree">
-                                                        Como configurar o VPrime?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" data-parent="#sApp-accordion">
-                                                <!-- Card Body -->
-                                                <div class="card-body px-0 py-3">
-                                                    Defina quais são as regras comerciais que deseja implantar no sistema e entre em contato com o suporte, para lhe auxiliar 
-                                                    na configuração do sistema.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Single Accordion Item -->
-                                        <div class="card border-top-0 border-left-0 border-right-0 border-bottom">
-                                            <!-- Card Header -->
-                                            <div class="card-header bg-inherit border-0 p-0">
-                                                <h2 class="mb-0">
-                                                    <button class="btn collapsed px-0 py-3" type="button" data-toggle="collapse" data-target="#collapseFour">
-                                                        Como configurar a conta Flex?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseFour" class="collapse" data-parent="#sApp-accordion">
-                                                <!-- Card Body -->
-                                                <div class="card-body px-0 py-3">
-                                                    A configuração é realizada na tela de Parâmetros, e para isso será necessário definir a modalidade do flex,
-                                                    o Saldo que vai conceder ao vendedor, qual o prazo de validade do saldo entre outras definições que estão na seção Flex em Parâmetros
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** FAQ Area End ***** -->
-
-       <!-- ***** Download Area Start ***** -->
-       <section class="section download-area overlay-dark ptb_100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                    <!-- Download Text -->
-                    <div class="download-text text-center">
-                        <h2 class="text-white">Disponível para Android e IOS</h2>
-                        <p class="text-white my-3 d-none d-sm-block">
-                            Disponível nas plataformas Android e IOS, entregamos informações e operações que aumentará a produtividade da equipe de sua empresa.     
-                        </p>
-                        <p class="text-white my-3 d-block d-sm-none">sApp is available for all devices, consectetur adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id labore nisi quisquam.</p>
-                        <!-- Store Buttons -->
-                        <div class="button-group store-buttons d-flex justify-content-center">
-                            <a href="https://play.google.com/store/apps/details?id=com.devionn.vprime" target="_blank">
-                                <img src="assets/img/icon/google-play.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="assets/img/icon/app-store.png" alt="">
-                            </a>
-                        </div>
-                        <span class="d-inline-block text-white fw-3 font-italic mt-3">* Instale o Vprime conforme o seu aparelho</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Download Area End ***** -->
-
-        <!-- ***** Subscribe Area Start ***** -->
-        <!-- <section class="section subscribe-area ptb_100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7">
-                        <div class="subscribe-content text-center">
-                            <h2>Deseja receber informações?</h2>
-                            <p class="my-4">Ao se inscrever, você receberá e-mails com informações sobre vendas, promoções e formas de pagamento. </p>
-                            <form class="subscribe-form">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu e-mail">
-                                </div>
-                                <button type="submit" class="btn btn-lg btn-block">Enviar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- ***** Subscribe Area End ***** -->
+        <!-- ***** Team Area End ***** -->
 
         <!--====== Contact Area Start ======-->
-        <section id="contact" class="contact-area bg-gray ptb_100">
+        <section id="contato" class="contact-area bg-gray ptb_100">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-6">
@@ -957,7 +517,7 @@
                                     </a>
                                 </li>
                                 <li class="py-2">
-                                    <a class="media" href="#">
+                                    <a class="media" href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank">
                                         <div class="social-icon mr-3">
                                             <i class="fas fa-phone-alt"></i>
                                         </div>
@@ -965,7 +525,7 @@
                                     </a>
                                 </li>
                                 <li class="py-2">
-                                    <a class="media" href="#">
+                                    <a class="media" href="mailto:contato@radocc.com">
                                         <div class="social-icon mr-3">
                                             <i class="fas fa-envelope"></i>
                                         </div>
@@ -1014,7 +574,7 @@
         <div class="height-emulator d-none d-lg-block"></div>
         <!--====== Height Emulator Area End ======-->
 
-        <!--====== Footer Area Start ======-->
+         <!--====== Footer Area Start ======-->
         <footer class="footer-area">
             <!-- Footer Top -->
             <div class="footer-top ptb_100">
@@ -1022,15 +582,11 @@
                     <div class="row">
                         <div class="col-12 col-sm-6 col-lg-3">
                             <!-- Footer Items -->
-                            <div class="footer-items">
-                                <!-- Logo -->
-                                <a class="navbar-brand" href="#">
-                                    <img class="logo mini-logo" src="assets/img/logo/logo.webp" alt="">
-                                </a>
-                                <p class="mt-2 mb-3">
-                                    Solução que proporciona crescimento da área comercial
-                                </p>
+                            <div class="footer-items"> 
                                 <!-- Social Icons -->
+                                <a class="navbar-brand" href="#">
+                                    <img class="logo" src="assets/img/logo/logo.png" alt="">
+                                </a>
                                 <div class="social-icons d-flex">
                                     <a class="facebook" href="https://www.facebook.com/radocc.softwares.3">
                                         <i class="fab fa-facebook-f"></i>
@@ -1057,11 +613,10 @@
                                 <!-- Footer Title -->
                                 <h3 class="footer-title mb-2">Links úteis</h3>
                                 <ul>
-                                    <li class="py-2"><a href="#home">Início</a></li>
-                                    <li class="py-2"><a href="#features">Sobre</a></li>
-                                    <!-- <li class="py-2"><a href="#">Serviços</a></li> -->
-                                    <!-- <li class="py-2"><a href="#">Blog</a></li> -->
-                                    <li class="py-2"><a href="#contato">Contato</a></li>
+                                    <li class="py-2"><a href="#inicio">Início</a></li>
+                                    <li class="py-2"><a href="#servicos">Soluções</a></li> 
+                                    <li class="py-2"><a href="#produtos">Produtos</a></li> 
+                                    <li class="py-2"><a href="#sobre">Sobre</a></li> 
                                 </ul>
                             </div>
                         </div>
@@ -1071,30 +626,12 @@
                                 <!-- Footer Title -->
                                 <h3 class="footer-title mb-2">Ajuda</h3>
                                 <ul>
-                                    <!-- <li class="py-2"><a href="#">FAQ</a></li> -->
-                                    <!-- <li class="py-2"><a href="#">Privacy Policy</a></li> -->
                                     <li class="py-2"><a href="#contato">Suporte</a></li>
-                                    <!-- <li class="py-2"><a href="#">Termos e Condições</a></li> -->
                                     <li class="py-2"><a href="#contato">Contato</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <!-- Footer Items -->
-                            <div class="footer-items">
-                                <!-- Footer Title -->
-                                <h3 class="footer-title mb-2">Download</h3>
-                                <!-- Store Buttons -->
-                                <div class="button-group store-buttons store-black d-flex flex-wrap">
-                                    <a href="https://play.google.com/store/apps/details?id=com.devionn.vprime" target="_blank">
-                                        <img src="assets/img/icon/google-play-black.png" alt="">
-                                    </a>
-                                    <a href="#">
-                                        <img src="assets/img/icon/app-store-black.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                         
                     </div>
                 </div>
             </div>
@@ -1115,23 +652,9 @@
                 </div>
             </div>
         </footer>
-        <!--====== Footer Area End ======--> 
+        <!--====== Footer Area End ======-->  
     </div>
-    <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>          
-          <h4 class="title-modal">Olá, seja bem vindo ao VPrime</h4>
-          <p class="p-modal">Agora você possui o site do VPrime para se manter informado sobre as novidades no sistema</p>
-          
-          <p class="p-modal">Para a sua segurança foi disponibilizado o certificado de criptografia. 
-              Recomendamos que utilize o link <a class="a-modal" href="https://vprime-painel.radocc.com">https://vprime-painel.radocc.com</a> para acessar o sistema</p>
-          <p class="p-modal">Lembre-se de salvar em favoritos do seu navegador!</p>
-
-        </div>
-      
-      </div>
 
     <!-- ***** All jQuery Plugins ***** -->
 
@@ -1147,7 +670,6 @@
 
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
-
 </body>
 
 </html>

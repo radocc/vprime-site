@@ -451,14 +451,6 @@ img {
     right: 0;
 }
 
-.homepage-5 .shape-bottom svg {
-    overflow: hidden;
-    width: 100%;
-    line-height: 0;
-    direction: ltr;
-    transform: rotate(180deg);
-}
-
 /*BACKGROUND OVERLAY*/
 .bg-overlay,
 .overlay-dark {
@@ -501,7 +493,7 @@ img {
 .btn.sApp-btn:before,
 .bg-overlay::after,
 .benifits-item:after {
-    background: linear-gradient(-47deg, #f8543c 0%, #F26419 100%);
+    background:#42B883;
 }
 
 /*SOCIAL ICONS*/
@@ -549,22 +541,6 @@ img {
 /*BACKGROUND IMAGES*/
 .welcome-area {
     /* background: rgba(0, 0, 0, 0) url("../img/bg/welcome-bg.jpg") no-repeat scroll center center / cover; */
-}
-
-.homepage-2 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/bg/pexels-fauxels-3184338.jpg") no-repeat scroll center center / cover;
-}
-
-.homepage-4 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/blog/blog-7.jpg") no-repeat scroll center center / cover;
-}
-
-.homepage-5 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/blog/blog-4.jpg") no-repeat scroll center center / cover;
-}
-
-.homepage-6 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/blog/blog-9.jpg") no-repeat scroll center center / cover;
 }
 
 .accounts .welcome-area {
@@ -1068,99 +1044,19 @@ img {
 }
 
 /* ***********************************
-:: 8.1 WELCOME AREA HOMEPAGE-3 CSS
-**************************************/
-@media (min-width: 992px) {
-    .homepage-2 .welcome-thumb {
-        max-width: 100%;
-    }
-}
-.homepage-3 .welcome-area .subscribe-form {
-    position: relative;
-    display: block;
-    width: 80%;
-}
-
-.homepage-3 .welcome-area .subscribe-form input {
-    font-size: 14px;
-    border-radius: 10px;
-    text-indent: 3%;
-    -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-}
-
-.homepage-3 .welcome-area .subscribe-form button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.homepage-2 .welcome-area .shape-bottom svg {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.homepage-3 .welcome-area .shape-bottom svg {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-/* ***********************************
-:: 8.2 WELCOME AREA HOMEPAGE-4 CSS
-**************************************/
-.homepage-4 .welcome-thumb {
-    max-width: 100%;
-}
-
-.homepage-4 .welcome-thumb > img {
-    position: relative;
-    -webkit-animation: bounceHero 3s infinite;
-    animation: bounceHero 3s infinite;
-}
-
-@-webkit-keyframes bounceHero {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 25px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
-@keyframes bounceHero {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 25px;
-    }
-
-    100% {
-        top: 0px;
-    }
-}
-
-/* ***********************************
 :: 8.3 WELCOME AREA HOMEPAGE-6 CSS
 **************************************/
-.homepage-6 .shape-bottom {
+.homepage .shape-bottom {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.homepage-6 .shape-bottom svg {
+.homepage .shape-bottom svg {
     -webkit-transform: translateX(-50%) rotateY(180deg);
     transform: translateX(-50%) rotateY(180deg);
 }
 
-.homepage-6 .shape-bottom svg {
+.homepage .shape-bottom svg {
     display: block;
     width: calc(100% + 1.3px);
     position: relative;
@@ -1261,84 +1157,6 @@ img {
     .discover-thumb {
         max-width: 300px;
     }
-}
-
-/* ******************************
-:: 13.0 WORK AREA CSS
-****************************** */
-.single-work {
-    position: relative;
-}
-
-.single-work::after {
-    position: absolute;
-    content: '\f054';
-    font-size: 45px;
-    font-weight: 900;
-    color: #fff;
-    font-family: 'Font Awesome 5 Free';
-    top: 50%;
-    right: 0;
-    margin-right: -50px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: transform 0.3s;
-    transition: transform 0.3s;
-}
-
-.single-work:hover::after {
-    -webkit-transform: translateX(5px) translateY(-50%);
-    transform: translateX(5px) translateY(-50%);
-}
-
-.work-area .col-12:last-of-type .single-work::after {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .single-work::after {
-        display: none;
-    }
-}
-
-/* ******************************
-:: 14.0 SCREENSHOTS AREA CSS
-****************************** */
-.single-screenshot {
-    position: relative;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-}
-
-.slick-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: -40px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.slick-dots li button {
-    font-size: 0;
-    height: 8px;
-    width: 8px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    margin: 5px;
-    -webkit-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.slick-dots .slick-active button,
-.testimonial-area .owl-carousel button.owl-dot.active {
-    background-color: #2F4858;
-    -webkit-box-shadow: 0 1px 5px #2F4858;
-    box-shadow: 0 1px 5px #2F4858;
 }
 
 /* ******************************
@@ -2080,13 +1898,6 @@ img {
     .map-area {
         height: 450px;
     }
-}
-
-.homepage-5 .contact-top > h3 {
-    font-size: 2em;
-}
-.homepage-5 .contact-top h5 {
-    line-height: 1.4;
 }
 
 .contact-bottom > span {
