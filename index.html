@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,14 @@
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <script>
+        function direcionar(){
+            if (window.location.pathname != '#download'){
+                var link = document.getElementById('link-download')
+                if (link != null){
+                    link.click();
+                }
+            }
+        }
         function abrirModal(){
             var modal = document.getElementById("myModal");
             var btn = document.getElementById("myBtn");
@@ -44,7 +52,7 @@
     </script>
 </head>
 
-<body class="homepage-2" onload="abrirModal()">
+<body class="homepage-2" onloadstart="direcionar()">
     <!--====== Preloader Area Start ======-->
     <div class="preloader-main">
         <div class="preloader-wapper">
@@ -105,6 +113,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link scroll" href="#contact">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#download">Download</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="https://vprime-painel.radocc.com">Acessar</a>
@@ -623,11 +634,11 @@
                                     <i class="fas fa-star text-warning"></i>
                                     <i class="fas fa-star text-warning"></i>
                                 </div>
-                                <h4 class="text-primary mt-4 mb-3">Reduziu meu trabalho</h4>
+                                <h4 class="text-primary mt-4 mb-3">Informações precisas</h4>
                                 <!-- Review Text -->
                                 <div class="review-text">
                                     <p>
-                                        Com informações seguras, em tempo real, consigo planejar o futuro do negócio, enquanto o Vprime gerencia a operação.
+                                        Disponibilizamos o sistema e regras, para todos os representantes, vendedores e vendedores dos representantes.
                                     </p>
                                 </div>
                                 <!-- Quotation Icon -->
@@ -639,12 +650,12 @@
                             <div class="reviewer media bg-gray p-4">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/everaldo.jpeg" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Denilson</h5>
-                                    <h6 class="text-secondary fw-6">Indústria TNT Nitros Quimica</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Everaldo</h5>
+                                    <h6 class="text-secondary fw-6">PatoLux Indústria</h6>
                                 </div>
                             </div>
                         </div>
@@ -684,24 +695,24 @@
                                     <!-- Plan Title -->
                                     <div class="plan-title my-2 my-sm-3">
                                         <h3 class="text-uppercase">Starter</h3>
-                                    </div>
-                                    <!-- Plan Price
+                                    </div>                                    
                                     <div class="plan-price pb-2 pb-sm-3">
-                                        <h1 class="color-primary"><small class="fw-7">R$</small>35,99</h1>
-                                    </div> -->
+                                        <h3 class="color-primary"><small class="fw-7">R$</small>25,99 ao mês</h3>
+                                    </div>
                                     <!-- Plan Description -->
                                     <div class="plan-description">
                                         <ul class="plan-features">
+                                            <li class="border-top py-3">Realização de Pedidos</li>
+                                            <li class="border-top py-3">Cadastro de Clientes</li>
                                             <li class="border-top py-3">Online e Offline</li>
-                                            <li class="border-top py-3">Servidor em Nuvem</li>
-                                            <li class="border-top py-3">24/7 Suporte técnico</li>
+                                            <li class="border-top py-3">Servidor em Nuvem</li>                                            
                                             <li class="border-top py-3">Portal Web para gerenciamento e parametrizações</li>
-                                            <li class="border-top border-bottom py-3">Realização de backup diário</li>
+                                            <li class="border-top py-3">Positivação de Clientes</li>
                                         </ul>
                                     </div>
                                     <!-- Plan Button -->
                                     <div class="plan-button">
-                                        <a href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank" class="btn mt-4">Entrar em Contato</a>
+                                        <a href="https://vprime-painel.radocc.com/#/inscrevase" target="_blank" class="btn mt-4">Adquirir </a>
                                     </div>
                                 </div>
                             </div>
@@ -724,10 +735,11 @@
                                     <div class="plan-description">
                                         <ul class="plan-features">
                                             <li class="border-top py-3">Recursos do Starter</li>
-                                            <li class="border-top py-3">Cadastros de Clientes</li>
-                                            <li class="border-top py-3">Operações de pedidos, orçamentos, bonificação e troca</li>
-                                            <li class="border-top py-3">Positivação de Clientes</li>
-                                            <li class="border-top border-bottom py-3">Controle de Estoque</li>
+                                            <li class="border-top py-3">Justificativas</li>
+                                            <li class="border-top py-3">Integrado com seu software ERP</li>
+                                            <li class="border-top py-3">Operações de pedidos, orçamentos, bonificação e troca</li>                                            
+                                            <li class="border-top py-3">Controle de Estoque</li>
+                                            <li class="border-top py-3">Dashboard, Mapas de Vendas e Gráficos</li>
                                         </ul>
                                     </div>
                                     <!-- Plan Button -->
@@ -756,9 +768,10 @@
                                         <ul class="plan-features">
                                             <li class="border-top py-3">Recursos do Business</li>
                                             <li class="border-top py-3">Gestão de Conta Flex, Bonificação e Troca </li>
-                                            <li class="border-top py-3">Customização de Operações</li>
-                                            <li class="border-top py-3">Dashboard, Mapas de Vendas e Gráficos</li>
-                                            <li class="border-top border-bottom py-3">Comissões e Metas</li>
+                                            <li class="border-top py-3">Customização de Operações</li>                                            
+                                            <li class="border-top py-3">Comissões e Metas</li>
+                                            <li class="border-top py-3">Relatórios</li>
+                                            <li class="border-top py-3">24/7 Suporte técnico</li>
                                         </ul>
                                     </div>
                                     <!-- Plan Button -->
@@ -826,7 +839,7 @@
                                             <div id="collapseTwo" class="collapse" data-parent="#sApp-accordion">
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
-                                                    Para a solicitação de suporte disponibilizamos um os telefones de contato na área contato do Site.
+                                                    Para a solicitação de suporte disponibilizamos o telefone de contato na área contato do Site.
                                                 </div>
                                             </div>
                                         </div>
@@ -862,7 +875,8 @@
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
                                                     A configuração é realizada na tela de Parâmetros, e para isso será necessário definir a modalidade do flex,
-                                                    o Saldo que vai conceder ao vendedor, qual o prazo de validade do saldo entre outras definições que estão na seção Flex em Parâmetros
+                                                    o aaldo que vai conceder ao vendedor, qual o prazo de validade do saldo entre outras definições que estão na seção 
+                                                    Flex em Parâmetros
                                                 </div>
                                             </div>
                                         </div>
@@ -877,7 +891,7 @@
         <!-- ***** FAQ Area End ***** -->
 
        <!-- ***** Download Area Start ***** -->
-       <section class="section download-area overlay-dark ptb_100">
+       <section id="download" class="section download-area overlay-dark ptb_100">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
@@ -890,7 +904,7 @@
                         <p class="text-white my-3 d-block d-sm-none">sApp is available for all devices, consectetur adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id labore nisi quisquam.</p>
                         <!-- Store Buttons -->
                         <div class="button-group store-buttons d-flex justify-content-center">
-                            <a href="https://play.google.com/store/apps/details?id=com.devionn.vprime" target="_blank">
+                            <a href="https://s3-sa-east-1.amazonaws.com/vprime-painel.radocc.com/vprime.apk" target="_blank">
                                 <img src="assets/img/icon/google-play.png" alt="">
                             </a>
                             <a href="https://apps.apple.com/us/app/id1528542165" target="_blank">
@@ -1086,7 +1100,7 @@
                                 <h3 class="footer-title mb-2">Download</h3>
                                 <!-- Store Buttons -->
                                 <div class="button-group store-buttons store-black d-flex flex-wrap">
-                                    <a href="https://play.google.com/store/apps/details?id=com.devionn.vprime" target="_blank">
+                                    <a href="https://s3-sa-east-1.amazonaws.com/vprime-painel.radocc.com/vprime.apk" target="_blank">
                                         <img src="assets/img/icon/google-play-black.png" alt="">
                                     </a>
                                     <a href="https://apps.apple.com/us/app/id1528542165" target="_blank">
